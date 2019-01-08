@@ -1,0 +1,21 @@
+$blue: rgb(35,0,170);
+$red: rgb(255,0,0);
+$yellow: rgb(251,189,29);
+$grad: linear-gradient(to top right,$yellow 20%, $red 40%, $blue 60%);
+
+// Text, icons, hover states
+$video-react-primary-foreground-color: transparent !default;
+
+// Control backgrounds (control bar, big play, menus)
+$video-react-primary-background-color: transparent !default;
+$video-react-primary-background-transparency: 0 !default;
+
+// Hover states, slider backgrounds
+$video-react-secondary-background-color: transparent;
+$video-react-secondary-background-transparency: 0 !default;
+
+$video-react-text-font-family: serif, Times, "Times New Roman" !default;
+
+$video-react-big-play-button-width: 3em !default;
+$video-react-big-play-button-height: 1.5em !default;
+$video-react-big-play-button-transparency: 0 !default;

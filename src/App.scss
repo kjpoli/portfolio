@@ -1,0 +1,202 @@
+@import "~sass-text-stroke/text-stroke";
+@import "./styles/scss/video-react";
+
+$blue: rgb(35,0,170);
+$red: rgb(255,0,0);
+$yellow: rgb(251,189,29);
+$grad: linear-gradient(to top right,$yellow 20%, $red 40%, $blue 60%);
+$video-react-primary-foreground-color: blue !default;
+
+@mixin gradient-border($color1, $color2, $border-width, $direction) {
+  border: none;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#{$direction}, $color1 0%, $color2 100%), linear-gradient(#{$direction}, $color1 0%, $color2 100%);
+  @if $direction == 'to right' or $direction == 'to left' {
+    @if $direction == 'to right' {
+      border-left: $border-width solid $color1;
+      border-right: $border-width solid $color2;
+    } @else {
+      border-left: $border-width solid $color2;
+      border-right: $border-width solid $color1;
+    }
+    background-position: 0px 100%, 0px 0px;
+    background-size: 100% $border-width;
+  }
+
+  @if $direction == 'to top' or $direction == 'to bottom' {
+    @if $direction == 'to top' {
+      border-bottom: $border-width solid $color1;
+    } @else {
+      border-bottom: $border-width solid $color2;
+    }
+    background-position: 0 0, 0 0;
+    background-size: $border-width 100%;
+  }
+}
+
+.App {
+  font-family: helvetica;
+  }
+
+
+body {
+  padding: 40px;
+  background-color: black;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.nameplate{
+}
+.vibrant {
+  background: $grad;
+  background-size: 150% 150%;
+  animation: Gradient 8s ease infinite;
+  background-clip: text;
+
+}
+
+h1 {
+  line-height: 0.85;
+  font-weight: 900;
+  text-align: left;
+  margin-top: 0px;
+  color: black;
+  font-size: 112pt;
+  -webkit-text-stroke: 8px transparent;
+}
+h2 {
+  font-weight: 800;
+  text-align: left;
+  margin: 0px;
+  margin-top: -15px;
+  margin-left: 4px;
+  font-size: 30pt;
+
+  -webkit-text-fill-color: transparent;
+}
+h4 {
+  font-weight: 800;
+  font-size: 50pt;
+}
+h5 {
+  text-align: center;
+  font-size: 12pt;
+}
+#batsAnim {
+  display: block;
+  positon: absolute;
+  top: 0;
+}
+.video-react-icon-fullscreen {
+  color: white !important;
+}
+p {
+  color: white;
+  font-size: 12pt;
+}
+
+hr {
+  background-clip: content-box !important;
+  background: linear-gradient(to right,$yellow 20%, $red 40%, $blue 60%) !important;
+  height: 4px;
+  color: transparent;
+  border: 0px transparent solid;
+  width: 100%;
+}
+
+#gallery-grid{
+  display: inline;
+  padding: 20px;
+}
+
+
+.video-react {
+  display: inline-block;
+
+  margin: 20px;
+  border-radius: 20px;
+  .video-react-big-play-button {
+    color: transparent;
+
+
+    background-color: transparent;
+    border: 0px transparent solid;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+video {
+  border-radius: 15px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: white;
+}
+.dl-button{
+  color: white;
+  font-size: 20pt;
+  font-weight: 800;
+  padding: 40px;
+  margin-right: 10px;
+
+}
+.react-pdf__Page__svg{
+  filter: contrast(2);
+  filter: invert(100%);
+}
+.nav-tabs {
+  border: 0px transparent solid !important;
+  postition: absolute;
+  top: 20%;
+  border-top: 0px transparent solid;
+  margin-bottom: 40px;
+  .nav-link {
+    text-align: center;
+    padding-right:30px;
+    margin: 20px;
+    position: relative;
+  -webkit-text-fill-color: transparent;
+    /* just to show box-shadow still works fine */
+    
+    }
+
+  .nav-link:hover{
+    border: 0px transparent solid;
+    background-color: black;
+    animation: MoveGradient 1s ease infinite alternate !important;
+  }
+  .active{
+  -webkit-text-fill-color: white;
+    border: 0px transparent solid;
+  }
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes MoveGradient {
+	0% {
+		background-position: 0% 10%
+	}
+	100% {
+		background-position: 20% 90%
+	}
+}
