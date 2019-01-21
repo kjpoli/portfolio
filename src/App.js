@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 //import Lottie from 'react-lottie';
 import About from './about.js';
-
 import Navigator from './navigator.js';
-import VideoGrid from './videogrid.js';
 import Fade from 'react-reveal/Fade';
 class App extends Component {
   render() {
     
-    const defaultOptions = {
+    /*const defaultOptions = {
       renderer: 'html',
       loop: true,
       autoplay: true,
@@ -17,6 +15,7 @@ class App extends Component {
         preserveAspectRatio: 'xMidYMid slice'
     }
     };
+    */
     return (
       <div className="App">
         {/*

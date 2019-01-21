@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "repo": "https://github.com/kjpoli/portfolio.git",
   "homepage": "http://kjpoli.github.io/portfolio-gh-pages",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.12",

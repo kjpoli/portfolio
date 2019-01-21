@@ -21,7 +21,15 @@ async function generateThumbs() {
     }));
     let vInfo = []
     await vNames.forEach( async (vname) => {
-        getDimensions(`./public/gallery/${vname}`).then( (dimensions) => vInfo.push({name: vname, size: dimensions}))} );
+
+        getDimensions(`./public/gallery/${vname}`).then( (dimensions) => {
+            let asp;
+            if(dimensions.width === dimensions.height){
+                asp = 'square';
+            }else {
+                asp = 'rect';
+            }
+            vInfo.push({name: vname, size: dimensions, aspect: asp})} )} );
     setTimeout(() => fs.writeFile('./src/videos.json', JSON.stringify(vInfo), 'utf8', (err) => {if (err) throw err}), 5000);
     //write vNames to static json so webpack knows which files to grab from public/
 }

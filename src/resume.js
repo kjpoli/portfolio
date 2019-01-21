@@ -9,12 +9,8 @@ library.add(faDownload, faVideo);
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends Component {
-    constructor(props){
-      super(props);
-    }
     state = {
-    numPages: null,
-    pageNumber: 1,
+    pageNumber: 1
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -22,7 +18,7 @@ class Resume extends Component {
   }
 
     render() {
-    const { pageNumber, numPages } = this.state;
+    const { pageNumber } = this.state;
        return (
          <div>
            <a className='dl-button' href="./resume.pdf" download="kpoli_resume.pdf">Download  <FontAwesomeIcon icon='download'/></a>
