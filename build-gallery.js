@@ -1,28 +1,29 @@
 const extractFrames = require('ffmpeg-extract-frames');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const getDimensions = require('get-video-dimensions');
 
 
 async function generateThumbs() {
-
+    let gpath = path.join(os.homedir(), 'pfgallery');
     //everything not a directory in that dir buddy you best remember that
     //theres a DS_Store file in every macOS directory so filter that out
-    let vNames = fs.readdirSync('./public/gallery')
-        .filter(file => fs.lstatSync(path.join(__dirname,'public', 'gallery', file)).isFile() && file !== '.DS_Store');
+    let vNames = fs.readdirSync(gpath)
+        .filter(file => fs.lstatSync(path.join(gpath, file)).isFile() && file !== '.DS_Store');
 
-    let vPaths = vNames.map( (name) => path.join(__dirname,'public', 'gallery', name) );
+    let vPaths = vNames.map( (name) => path.join(gpath, name) );
     
     //generate thumbs from video must have ffMPEG installed, 5s in or first frame
     vPaths.forEach ( async (vPath) => await extractFrames({
        input: vPath,
-       output: path.join(__dirname,'public','gallery', 'thumbs', path.parse(vPath).name + '.png') ,
+       output: path.join(gpath,'thumbs', path.parse(vPath).name + '.png') ,
         offsets: [1000]
     }));
     let vInfo = []
     await vNames.forEach( async (vname) => {
 
-        getDimensions(`./public/gallery/${vname}`).then( (dimensions) => {
+        getDimensions(`../pfgallery/${vname}`).then( (dimensions) => {
             let asp;
             if(dimensions.width === dimensions.height){
                 asp = 'square';
