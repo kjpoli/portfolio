@@ -48,8 +48,7 @@ body {
 }
 .vibrant {
   background: $grad;
-  background-size: 150% 150%;
-  animation: Gradient 4s ease infinite;
+  animation: Gradient 4s ease infinite !important;
   background-clip: text;
 
 }
@@ -183,13 +182,13 @@ video {
 
 @keyframes Gradient {
 	0% {
-		background-position: 0% 50%
+		background-position: 0% 0%
 	}
 	50% {
 		background-position: 100% 50%
 	}
 	100% {
-		background-position: 0% 50%
+		background-position: 0% 20%
 	}
 }
 @keyframes MoveGradient {

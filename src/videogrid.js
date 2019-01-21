@@ -7,12 +7,10 @@ const pparse = require('path-parse');
 class VideoGrid extends Component {
     constructor(props){
         super(props);
-        this.state = {bitrate: 'half'};
+        this.state = {bitrate: 'full'};
     }
   render() {
     let vNames = videos.default;
-    let sqs = vNames.filter( (obj) => obj.aspect === 'square' );
-    let rcts = vNames.filter( (obj) => obj.aspect === 'rect' );
 
     return <Fade bottom cascade  >
              <h5>click or touch a video to play it </h5>
@@ -25,11 +23,12 @@ class VideoGrid extends Component {
                          (<Player
                            loop={true}
                            fluid={false}
-                           width={vInfo.size.width/3}
-                           height={vInfo.size.height/3}
+                           width={vInfo.size.width/3.5}
+                           height={vInfo.size.height/3.5}
                            playsInLine
+                           muted
                            poster={`http://pfgallery-ebb6.kxcdn.com/thumbs/${pparse(vInfo.name).name + '.png'}`}
-                           src={`http://pfgallery-ebb6.kxcdn.com/${this.state.bitrate}/${pparse(vInfo.name).name + '.mp4'}`}
+                           src={`http://pfgallery-ebb6.kxcdn.com/${this.state.bitrate}/${vInfo.name}`}
                          />))  }
       </div>
         </Fade>;
