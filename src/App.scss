@@ -6,6 +6,7 @@ $red: rgb(255,0,0);
 $yellow: rgb(251,189,29);
 $grad: linear-gradient(to top right,$yellow 20%, $red 40%, $blue 60%);
 $video-react-primary-foreground-color: blue !default;
+$mobile-break: 700px;
 
 @mixin gradient-border($color1, $color2, $border-width, $direction) {
   border: none;
@@ -48,12 +49,16 @@ body {
 }
 .vibrant {
   background: $grad;
-  animation: Gradient 4s ease infinite !important;
+  background-size: 150% 150%;
+  animation: Gradient 4s ease infinite;
   background-clip: text;
 
 }
 
 h1 {
+  @media screen and (max-width: $mobile-break) {
+    font-size: 72pt;
+    }
   line-height: 0.85;
   font-weight: 900;
   text-align: left;
@@ -63,6 +68,9 @@ h1 {
   -webkit-text-stroke: 8px transparent;
 }
 h2 {
+  @media screen and (max-width: $mobile-break) {
+    font-size: 20pt;
+    }
   font-weight: 800;
   text-align: left;
   margin: 0px;
@@ -153,6 +161,16 @@ video {
   filter: contrast(2);
   filter: invert(100%);
 }
+.aboutgrid{
+  display: inline-flex;
+  @media screen and (max-width: $mobile-break){
+    display: inline;
+  }
+  .aboutimg{
+    border-radius: 25px;
+    margin: 20px;
+  }
+}
 .nav-tabs {
   border: 0px transparent solid !important;
   postition: absolute;
@@ -182,13 +200,13 @@ video {
 
 @keyframes Gradient {
 	0% {
-		background-position: 0% 0%
+		background-position: 0% 50%
 	}
 	50% {
 		background-position: 100% 50%
 	}
 	100% {
-		background-position: 0% 20%
+		background-position: 0% 50%
 	}
 }
 @keyframes MoveGradient {

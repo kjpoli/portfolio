@@ -7,7 +7,7 @@ const pparse = require('path-parse');
 class VideoGrid extends Component {
     constructor(props){
         super(props);
-        this.state = {bitrate: 'full'};
+        this.state = {bitrate: 'half'};
     }
   render() {
     let vNames = videos.default;
