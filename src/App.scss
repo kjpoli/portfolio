@@ -36,7 +36,7 @@ $mobile-break: 700px;
 }
 
 .App {
-  font-family: helvetica;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
 
@@ -77,8 +77,12 @@ h2 {
   margin-top: -15px;
   margin-left: 4px;
   font-size: 30pt;
-
-  -webkit-text-fill-color: transparent;
+  text-shadow:
+         0 0 500px white,      /* inner white */
+         20px 0 100px $red,   /* inner left magenta short */
+        -20px 0 100px $blue,  /* inner right cyan short */
+         20px 0 300px $red,  /* inner left magenta broad */
+        0 0 50px $yellow,            /* outer white */
 }
 h4 {
   font-weight: 800;

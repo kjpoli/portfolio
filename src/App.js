@@ -28,7 +28,7 @@ class App extends Component {
         <div className='nameplate'>
           <Fade bottom  text>
             <h1 className='vibrant'> Kevin Poli </h1>
-            <h2 className='vibrant'> Developer | Director | Technical Artist </h2>
+            <h2 className=''> Developer | Director | Technical Artist </h2>
           </Fade>
         </div>
         <hr className='grad-hr vibrant' />

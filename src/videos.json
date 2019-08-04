@@ -1,14 +1,5 @@
-[
-  {
-    "name": "witness.mp4",
-    "size": {
-      "width": 1920,
-      "height": 1080
-    },
-    "aspect": "rect"
-  },
-  {
-    "name": "EYEZ.mp4",
+[{
+    "name": "DS2.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -16,38 +7,22 @@
     "aspect": "square"
   },
   {
+    "name": "PET CEMETARY - TITLE CARD.mp4",
+    "size": {
+      "width": 1920,
+      "height": 1200
+    },
+    "aspect": "rect"
+  },
+ {
     "name": "LILY OF THE VALLEY.mp4",
     "size": {
       "width": 1000,
       "height": 1000
     },
     "aspect": "square"
-  },
-  {
-    "name": "BATS.mov",
-    "size": {
-      "width": 1920,
-      "height": 1080
-    },
-    "aspect": "rect"
-  },
-  {
-    "name": "BIGMOUTH BILLY BASS.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "AMOEBA_1.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
+ },
+ {
     "name": "BRONCO.mp4",
     "size": {
       "width": 1000,
@@ -55,40 +30,9 @@
     },
     "aspect": "square"
   },
+
   {
-    "name": "PETC.mp4",
-    "size": {
-      "width": 1920,
-      "height": 1200
-    },
-    "aspect": "rect"
-  },
-  {
-    "name": "SPITE2.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "FLIES_1.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "NOLLIE.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "knife.mp4",
+    "name": "witness.mp4",
     "size": {
       "width": 1920,
       "height": 1080
@@ -104,7 +48,7 @@
     "aspect": "square"
   },
   {
-    "name": "SPIN_1.mp4",
+    "name": "FOREST.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -112,7 +56,56 @@
     "aspect": "square"
   },
   {
-    "name": "TOOTH_1.mp4",
+    "name": "ELLIOTT.mp4",
+    "size": {
+      "width": 1080,
+      "height": 1080
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "SPITE.mp4",
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "aspect": "rect"
+  },
+  {
+    "name": "BIGMOUTH BILLY BASS.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+
+  {
+    "name": "knife.mp4",
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "aspect": "rect"
+  },
+  {
+    "name": "FLIES_1.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "TRIP_1.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "AMOEBA_1.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -127,8 +120,26 @@
     },
     "aspect": "rect"
   },
+
+
   {
-    "name": "TRIP_1.mp4",
+    "name": "AGONY_1.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+ {
+    "name": "NOLLIE.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "TOOTH_1.mp4",
     "size": {
       "width": 1000,
       "height": 1000

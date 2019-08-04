@@ -12,7 +12,7 @@ function shuffleArray(array) {
 }
 
 async function generateThumbs() {
-    let gpath = path.join(os.homedir(), 'pfgallery', 'full');
+    let gpath = path.join(os.homedir(), 'pfgallery', 'half');
     let thumbsp = path.join(os.homedir(),'pfgallery','thumbs');
     //everything not a directory in that dir buddy you best remember that
     //theres a DS_Store file in every macOS directory so filter that out
