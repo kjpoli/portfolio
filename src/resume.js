@@ -9,12 +9,15 @@ library.add(faDownload, faVideo);
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends Component {
-    state = {
-    pageNumber: 1
-  }
+    constructor(props){
+        super(props);
+        this.state = {
+            pageNumber: 1,
+        rendered: false
+    }}
 
   onDocumentLoadSuccess = ({ numPages }) => {
-    this.setState({ numPages });
+    this.setState({ numPages, rendered: true });
   }
 
     render() {
@@ -31,6 +34,17 @@ class Resume extends Component {
         >
           <Page width={900} pageNumber={pageNumber} />
         </Document>
+           {this.state.rendered ?  <div >
+
+           <a className='dl-button' href="./trifold.pdf" download="telescope.pdf">Telescope - Innovation Expo Display  <FontAwesomeIcon icon='download'/></a>
+
+               <Document
+           renderMode='canvas'
+           file="trifold.pdf"
+           onLoadSuccess={this.onDocumentLoadSuccess}
+               >
+           <Page width={1200} pageNumber={pageNumber} />
+               </Document></div> : ''}
       </div>
 
        );

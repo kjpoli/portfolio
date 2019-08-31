@@ -34,23 +34,24 @@ $mobile-break: 700px;
     background-size: $border-width 100%;
   }
 }
-
+div {
+  display: inline;
+}
 .App {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, liberation-sans, sans-serif;
   }
 
 
 body {
   padding: 40px;
   background-color: black;
-  font-family: Helvetica, Arial, sans-serif;
 }
 .nameplate{
 }
 .vibrant {
   background: $grad;
   background-size: 150% 150%;
-  animation: Gradient 4s ease infinite;
+  //animation: Gradient 4s ease infinite;
   background-clip: text;
 
 }
@@ -158,10 +159,10 @@ video {
   font-size: 20pt;
   font-weight: 800;
   padding: 40px;
-  margin-right: 10px;
+  margin: 20px;
 
 }
-.react-pdf__Page__svg{
+.react-pdf__Page__svg, .invert{
   filter: contrast(2);
   filter: invert(100%);
 }
@@ -201,7 +202,55 @@ video {
     border: 0px transparent solid;
   }
 }
+.gallery-control {
+  width: 100%;
+  display: inline-flex;
+}
+.big-toggle-text {
+  background: $grad;
+  background-clip: text;
+}
+.big-toggle {
+    color: transparent;
+  position: relative;
+    border-radius: 15px;
+    border: 4px transparent solid;
+    margin: 25px;
+    margin-top: -20px;
+    font-size: 15pt;
+    padding: 10px;
+    width: 25%;
+    background: $grad;
+    //background-size: 200%;
+    background-clip: padding-box;
+    &:after {
+      background-clip: text;
+      position: absolute;
+      top: 2px; bottom: 2px;
+    left: 2px; right: 2px;
+      background: black;
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+    }
+  &.active {
+    border: 2px white solid;
+    color: white;
+    background-color: black;
+    background: black;
+    &:after{
+      color: white;
+      background: black;
+    }
+  }
+}
 
+.img-display {
+  width: 30%;
+  border-radius: 15px;
+  height: auto;
+  margin: 10px;
+}
 @keyframes Gradient {
 	0% {
 		background-position: 0% 50%

@@ -9,8 +9,8 @@ class About extends Component {
         <Container className='aboutgrid'>
         <Col>
         <p> Welcome to my site, I hope you like it. I am an artist and computer programmer living in
-            New Jersey, where I enjoy the final stages of pursuing a Bachelor's Degree in Computer Science and a minor
-          in Visual Arts & Technology at Stevens Institute of Technology.
+            New Jersey, where I received my Bachelor's Degree in Computer Science with a minor
+          in Visual Arts & Technology from Stevens Institute of Technology.
           <br />
           <br />
            I frequently surrender my afternoons to exploring the
