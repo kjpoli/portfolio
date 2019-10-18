@@ -1,6 +1,22 @@
 [
-    {
-    "name": "DS2.mp4",
+  {
+    "name": "witro.mp4",
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "aspect": "rect"
+  },
+  {
+    "name": "pool.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "BIGMOUTH BILLY BASS.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -16,39 +32,7 @@
     "aspect": "rect"
   },
   {
-    "name": "LILY OF THE VALLEY.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "NOLLIE.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "PET CEMETARY - TITLE CARD.mp4",
-    "size": {
-      "width": 1920,
-      "height": 1200
-    },
-    "aspect": "rect"
-  },
-    {
-    "name": "BRONCO.mp4",
-    "size": {
-      "width": 1000,
-      "height": 1000
-    },
-    "aspect": "square"
-  },
-  {
-    "name": "TRIP_1.mp4",
+    "name": "DS2.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -72,7 +56,7 @@
     "aspect": "square"
   },
   {
-    "name": "knife.mp4",
+    "name": "skatey.mp4",
     "size": {
       "width": 1920,
       "height": 1080
@@ -80,7 +64,7 @@
     "aspect": "rect"
   },
   {
-    "name": "manhattan.mp4",
+    "name": "FOREST.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -88,7 +72,7 @@
     "aspect": "square"
   },
   {
-    "name": "AGONY_1.mp4",
+    "name": "TRIP_1.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -96,7 +80,7 @@
     "aspect": "square"
   },
   {
-    "name": "AMOEBA_1.mp4",
+    "name": "NOLLIE.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -112,7 +96,39 @@
     "aspect": "rect"
   },
   {
-    "name": "EYEZ.mp4",
+    "name": "SPIN_1.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "manhattan.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "FLIES_1.mp4",
+    "size": {
+      "width": 1000,
+      "height": 1000
+    },
+    "aspect": "square"
+  },
+  {
+    "name": "PET CEMETARY - TITLE CARD.mp4",
+    "size": {
+      "width": 1920,
+      "height": 1200
+    },
+    "aspect": "rect"
+  },
+  {
+    "name": "AGONY_1.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -128,7 +144,7 @@
     "aspect": "square"
   },
   {
-    "name": "FOREST.mp4",
+    "name": "EYEZ.mp4",
     "size": {
       "width": 1000,
       "height": 1000
@@ -136,7 +152,7 @@
     "aspect": "square"
   },
   {
-    "name": "witness.mp4",
+    "name": "toothy.mp4",
     "size": {
       "width": 1920,
       "height": 1080
@@ -144,21 +160,19 @@
     "aspect": "rect"
   },
   {
-    "name": "FLIES_1.mp4",
+    "name": "BRONCO.mp4",
     "size": {
       "width": 1000,
       "height": 1000
     },
     "aspect": "square"
   },
-
   {
-    "name": "BIGMOUTH BILLY BASS.mp4",
+    "name": "AMOEBA_1.mp4",
     "size": {
       "width": 1000,
       "height": 1000
     },
     "aspect": "square"
   }
-
 ]
