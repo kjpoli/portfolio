@@ -22,10 +22,8 @@ saving them the time of painstakingly managing many curves and control points.
 
 
 <div style="display: block">
-<img src="https://lh6.googleusercontent.com/amLQQtrfqldoeprxGLRiMBbhoJxl8YcGmNdCX1_wBPQlAgdyq4z68cb-QwmsEvI3wF3J7eQDTLbCCbYw89qeaAu10OBIyFpZYD3Jz753" width="20%" />
-<img
-src="https://lh5.googleusercontent.com/O-Gqo4v5nlLckat5gFvaa2i00jeGLBlzkmM5E4K8mePbUg_CXvayisg9AlZwjknZK718n6PoU7dIBKJZee45DH1eFQnQOP8NgyeNdMum"
-width="20%" />
+<img src="http://pfgallery-ebb6.kxcdn.com/select.png" width="20%" />
+<img src="http://pfgallery-ebb6.kxcdn.com/trimap.png" width="20%" />
 </div>
 
 here is an example of a selection I made in my movie Knife Man, where I just
@@ -82,7 +80,8 @@ descent once computing power became abundant.
     squared error between the two composites.
     
 
-<img class="invert" src="https://lh4.googleusercontent.com/ASmIBYLd7IH9xlLGWjIUA-2_Q-rnE_e9eRCTgl9RxC9oGIAnmh8-Qj-a6pT5YF0tKc_LDBzr3j7o1q80IkNEmVB3oTTwZsgnqnDihb9N" width="60%" />
+
+<img class="invert" src="http://pfgallery-ebb6.kxcdn.com/training.png" width="80%" />
 
 - alpha loss in gray, compositional loss in pink.
 
