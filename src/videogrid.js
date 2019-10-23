@@ -25,6 +25,7 @@ class VideoGrid extends Component {
                            fluid={false}
                            width={vInfo.size.width/3.5}
                            height={vInfo.size.height/3.5}
+                           preload={'none'}
                            playsInLine
                            muted
                            poster={`http://pfgallery-ebb6.kxcdn.com/thumbs/${pparse(vInfo.name).name + '.png'}`}

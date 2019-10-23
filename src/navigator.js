@@ -3,6 +3,7 @@ import {Nav,  NavLink} from 'reactstrap';
 import VideoGrid from './videogrid.js';
 import About from './about.js';
 import Resume from './resume.js';
+import Projects from './projects.js';
 
 class Navigator extends Component {
     constructor(props){
@@ -14,6 +15,7 @@ class Navigator extends Component {
        return (
          <>
          <Nav tabs>
+          <NavLink className={`tab-projects vibrant ${this.state.activeElement === 'projects' ? 'active' : '' }`}  onClick={() => this.setState({active: <Projects />, activeElement: 'projects'})}>Projects</NavLink>
           <NavLink className={`tab-gallery vibrant ${this.state.activeElement === 'gallery' ? 'active' : '' }`}  onClick={() => this.setState({active: <VideoGrid />, activeElement: 'gallery'})}>Gallery</NavLink>
           <NavLink className={`tab-resume vibrant ${this.state.activeElement === 'resume' ? 'active' : '' }`} onClick={() => this.setState({active: <Resume />, activeElement: 'resume'})}>Resume</NavLink>
           <NavLink className={`tab-about vibrant ${this.state.activeElement === 'about' ? 'active' : '' }`} onClick={() => this.setState({active: <About />, activeElement: 'about'})}>About</NavLink>

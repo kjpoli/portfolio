@@ -34,9 +34,6 @@ $mobile-break: 700px;
     background-size: $border-width 100%;
   }
 }
-div {
-  display: inline;
-}
 .App {
   font-family: "Helvetica Neue", Helvetica, liberation-sans, sans-serif;
   }
@@ -57,6 +54,10 @@ body {
 }
 
 h1 {
+  font-weight: 900;
+  font-size: 52pt;
+  color: white;
+  &.vibrant{
   @media screen and (max-width: $mobile-break) {
     font-size: 72pt;
     }
@@ -67,6 +68,7 @@ h1 {
   color: black;
   font-size: 112pt;
   -webkit-text-stroke: 8px transparent;
+  }
 }
 h2 {
   @media screen and (max-width: $mobile-break) {
@@ -74,20 +76,18 @@ h2 {
     }
   font-weight: 800;
   text-align: left;
-  margin: 0px;
+  margin: 10px;
   margin-top: -15px;
   margin-left: 4px;
   font-size: 30pt;
-  text-shadow:
-         0 0 500px white,      /* inner white */
-         20px 0 100px $red,   /* inner left magenta short */
-        -20px 0 100px $blue,  /* inner right cyan short */
-         20px 0 300px $red,  /* inner left magenta broad */
-        0 0 50px $yellow,            /* outer white */
+}
+h3 {
+  font-size: 16pt;
 }
 h4 {
-  font-weight: 800;
-  font-size: 50pt;
+  font-weight: 400;
+  font-size: 16pt;
+  font-style: italic;
 }
 h5 {
   text-align: center;
@@ -103,7 +103,7 @@ h5 {
 }
 p {
   color: white;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 
 hr {
@@ -202,6 +202,9 @@ video {
     border: 0px transparent solid;
   }
 }
+img {
+  border-radius: 15px;
+}
 .gallery-control {
   width: 100%;
   display: inline-flex;
@@ -244,12 +247,29 @@ video {
     }
   }
 }
-
+.contents-table {
+  background: white;
+  background-clip: padding-box;
+  padding-left: 3px;
+  margin-bottom: 50px;
+  .contents-table-inner{
+    background: black;
+    padding-left: 10px;
+  }
+}
+pre {
+  background: black !important;
+  border: 4px transparent solid !important;
+  font-size: 11pt;
+  code {
+    font-size: 12pt;
+  }
+}
 .img-display {
   width: 30%;
   border-radius: 15px;
   height: auto;
-  margin: 10px;
+  //margin: 10px;
 }
 @keyframes Gradient {
 	0% {

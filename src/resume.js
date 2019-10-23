@@ -23,12 +23,12 @@ class Resume extends Component {
     render() {
     const { pageNumber } = this.state;
        return (
-         <div>
+         <div style={{display: 'block'}}>
            <a className='dl-button' href="./resume.pdf" download="kpoli_resume.pdf">Download  <FontAwesomeIcon icon='download'/></a>
            <a className='dl-button' href="https://vimeo.com/kpoli">Vimeo <FontAwesomeIcon icon='video'/></a>
         <Document
           className='invert'
-          renderMode='svg'
+          renderMode='canvas'
           file="resume.pdf"
           onLoadSuccess={this.onDocumentLoadSuccess}
         >

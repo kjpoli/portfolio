@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 class About extends Component {
     render(){
        return  (<Fade bottom  cascade text>
-        <h4>About </h4>
+        <h1>About </h1>
         <Container className='aboutgrid'>
         <Col>
         <p> Welcome to my site, I hope you like it. I am an artist and computer programmer living in
